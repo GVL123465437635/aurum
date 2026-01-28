@@ -1,0 +1,253 @@
+/* ===========================
+   Color Variables - Edit These!
+   =========================== */
+
+:root {
+    --primary-bg: #600a0a;
+    --primary-dark: #500808;
+    --primary-darker: #800a0a;
+    --accent-color: #ff6969;
+    --text-light: #ffffff;
+    --text-secondary: #bfa4a4;
+    --heading-accent: #db7f7f;
+    --tab-inactive-bg: #700a0a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg);
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tab-container {
+    background-color: var(--primary-dark);
+    padding: 0;
+    margin: 0;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.tabs {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tab {
+    padding: 15px 30px;
+    margin-right: 5px;
+    background-color: var(--tab-inactive-bg);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.tab:hover {
+    background-color: var(--primary-darker);
+    color: var(--accent-color);
+}
+
+.tab.active {
+    background-color: var(--primary-darker);
+    color: var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 20px;
+}
+
+h4 {
+    margin: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-light);
+}
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--text-light);
+}
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--heading-accent);
+}   
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444444;
+}
+h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555555;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.box {
+    background-color: var(--primary-darker);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(255, 105, 105, 0.4);
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.staff-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.staff-card {
+    background-color: var(--primary-darker);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(255, 105, 105, 0.4);
+}
+
+.staff-image {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.staff-image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.staff-card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.position {
+    font-size: 14px;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .staff-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===========================
+   Individual Staff Member Styles
+   Edit these to customize each staff member
+   =========================== */
+
+#staff-1 {
+    background-color: brown;
+    box-shadow: #700a0a;
+}
+
+#staff-2 {
+    background-color: rgb(41, 35, 35);
+}
+
+#staff-3 {
+     background-color: brown;
+    box-shadow: #700a0a;
+}
+
+.white-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #000000;
+}
+
+.red-container {
+    background-color: #7a1616;
+    border-radius: 8px;
+    padding: 40px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(212, 111, 111, 0.3);
+    color: #000000;
+}
+
+.containers-wrapper {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
